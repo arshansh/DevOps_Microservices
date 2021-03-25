@@ -4,7 +4,7 @@
 #
 
 general:
-  build_dir: project-ml-microservice-kubernetes/
+  build_dir: project-ml-microservice-kubernetes
 
 version: 2
 jobs:
