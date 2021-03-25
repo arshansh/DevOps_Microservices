@@ -1,0 +1,6 @@
+error: failed to create deployment: deployments.apps "mymachinelearningapp" already exists
+NAME                                    READY   STATUS    RESTARTS   AGE
+mymachinelearningapp-544bf4b796-tp7cp   1/1     Running   0          38s
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
