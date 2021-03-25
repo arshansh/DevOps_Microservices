@@ -33,7 +33,12 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+run the run_docket.sh command to build the image and host it on port 8080, where the python app runs. First you can test by hitting port 8080 on localhost, by running make_predictions.sh. Once you are happy with everything start the next step.
+
+4. Run in Kubernetes:  `./run_kubernetes.sh`
+This script will deploy the previosuly built image to docker hub. It then deploys it to your kubernetes cluster via kubectl. Finally it portforwards (from the container port 80) to your localhost which you can again run the make_predictions.sh to see if the api is giving responses.
+
+5. Above you can also find the link to my circle ci which does the above steps in the CI pipeline
 
 ### Kubernetes Steps
 
