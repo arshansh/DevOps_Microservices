@@ -4,3 +4,25 @@ mymachinelearningapp-544bf4b796-tp7cp   1/1     Running   0          38s
 Forwarding from 127.0.0.1:8080 -> 80
 Forwarding from [::1]:8080 -> 80
 Handling connection for 8080
+
+[Out put of kubernetes logs from running kubectl logs <pod name>]
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 254-605-344
+[2021-03-25 11:24:23,084] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-03-25 11:24:23,097] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-03-25 11:24:23,105] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-03-25 11:24:23,109] INFO in app: Prediction:
+[20.35373177134412]
+127.0.0.1 - - [25/Mar/2021 11:24:23] "POST /predict HTTP/1.1" 200 -
